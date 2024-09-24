@@ -11,4 +11,4 @@ else:
 # -> shorthand if và toán tử ba ngôi
 a, b = 100, 200
 var = 'sẽ là câu này nếu đúng' if a < b else 'sẽ là câu này nếu sai'
-print(var)      
+print(var)
