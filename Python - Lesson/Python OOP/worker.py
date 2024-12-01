@@ -39,6 +39,7 @@ if __name__ == "__main__":
         str = input("Nhap id: ")
         if str == "":
             break
+        if str 
         id = str
         name = input("Nhap ho ten cong nhan: ")
         rank = int(input("Nhap bac cua cong nhan (So nguyen): "))
