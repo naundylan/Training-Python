@@ -1,3 +1,8 @@
+import os
+print(os.getcwd())
+os.chdir(os.path.dirname(__file__))  # Thay đổi thư mục làm việc về vị trí file hiện tại
+
+
 class student:
     subject = "Python"
     def __init__(self, id, name, score1, score2):
@@ -15,8 +20,16 @@ class student:
         return self.__score2
     def average(self):
         return (self.getScore1() + self.getScore2())/2
+    
+with open(r"input01.txt", "r") as file:
+    line = file.readlines()
 if __name__ == "__main__":
-    s1 = student("1", "Quyen", 10, 9)
-    s2 = student("2", "Alice", 9, 8)
-    print(s1.average())
-    print(s2.average())
+    studentList = []
+    for i in line:
+        i = i.split(";")
+        if i[0] == "":
+            break
+        studentList.append(student(i[0], i[1], float(i[2]), float(i[3])))
+    with open(r"result01.txt", "w") as file:
+        for i in studentList:
+            file.write(f"{i.getName()} {i.average()}\n")
