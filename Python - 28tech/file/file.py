@@ -4,7 +4,7 @@ print("Thư mục làm việc hiện tại:", os.getcwd())
 os.chdir(r"D:\Practice\Training-Python\Python - 28Tech\file")
 print("Thư mục làm việc hiện tại:", os.getcwd())
 
-with open(r"input.txt", "r", encoding="utf-8") as file:
+with open(r"input01.txt", "r", encoding="utf-8") as file:
     content = file.read()
     alpabet, num, other = "", "", ""
     for i in content:
@@ -14,5 +14,5 @@ with open(r"input.txt", "r", encoding="utf-8") as file:
             num += i
         else:
             other += i
-with open(r"result.txt", "w", encoding="utf-8") as file:
+with open(r"result01.txt", "w", encoding="utf-8") as file:
     result = file.write(alpabet + "\n" + num + "\n" + other)
