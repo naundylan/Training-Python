@@ -19,3 +19,5 @@ class hocphan:
         return 1
     def chuanhoa(self):
         return self.tendc.upper().capitalize().strip()
+    
+
