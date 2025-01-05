@@ -66,6 +66,8 @@ def main():
     tac_gia_4 = TacGia("Bùi Văn Thanh", "bvt@example.com", "Nam")
     tac_gia_5 = TacGia("Ngô Ánh Tuyết", "nat@example.com", "Nữ")
     tac_gia_6 = TacGia("Nguyễn Chí Trung", "nct@example.com", "Nam")
+    tac_gia_7 = TacGia("Chung Long Hồ", "clh@example.com", "Nam")
+    tac_gia_8 = TacGia("Nguyễn Thanh Hùng", "nth@example.com", "Nam") 
 
     # Tạo danh sách sách
     sach_1 = Sach(
@@ -76,7 +78,7 @@ def main():
     )
     sach_2 = Sach(
         "Python – Từ Cơ Bản Đến Giải Đề",
-        [tac_gia_2],
+        [tac_gia_2, tac_gia_7, tac_gia_8],
         "NXB Đại Học Sư Phạm Thành Phố Hồ Chí Minh",
         92000
     )
